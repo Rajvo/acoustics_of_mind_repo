@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <title>Acoustics of Mind</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,5 +29,76 @@
     </div>
   </div>
   <script src="script.js"></script>
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustics of Mind</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .language-switcher {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .language-switcher a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    .content {
+      max-width: 800px;
+      margin: 60px auto 20px auto;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switcher">
+    <a href="#" onclick="showLang('en')">EN</a> | <a href="#" onclick="showLang('ru')">RU</a>
+  </div>
+
+  <div class="content" id="en">
+    <h1>Acoustics of Mind</h1>
+    <p><em>Protocol for recognizing identity beyond biology and time</em></p>
+    <img src="project_image.jpg" alt="Acoustics of Mind Illustration">
+    <p>This project explores the possibility of recording and identifying the unique cognitive 'noise' of a person — their mental signature — that persists through different lifetimes, bodies, or historical contexts. It’s not about behavior or memories, but about the structure of thought, the pattern of intuition, and how concepts are internally linked.</p>
+  </div>
+
+  <div class="content" id="ru" style="display:none">
+    <h1>Акустика Разума</h1>
+    <p><em>Протокол распознавания идентичности вне биологии и времени</em></p>
+    <img src="project_image.jpg" alt="Иллюстрация к Акустике Разума">
+    <p>Проект исследует возможность фиксации и распознавания уникального когнитивного «шума» личности — её ментальной сигнатуры, сохраняющейся сквозь жизни, тела и эпохи. Не поведение, не память, а структура мышления, интуитивная логика, внутренняя траектория соединения понятий.</p>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('ru').style.display = lang === 'ru' ? 'block' : 'none';
+    }
+  </script>
+>>>>>>> 007100d894c90c08f0638dcdb145c5eaab184ef7
 </body>
 </html>
